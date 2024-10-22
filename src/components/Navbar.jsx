@@ -17,6 +17,7 @@ const Navbar = () => {
      <li><NavLink to="/" >Home</NavLink></li>
      <li><NavLink to="/Login" >Login</NavLink></li>
      <li><NavLink to="/Register" >Register</NavLink></li>
+     <li><NavLink to="/Order" >Order</NavLink></li>
       </>
       return (
           <div className="navbar bg-base-100">
@@ -55,7 +56,7 @@ const Navbar = () => {
       <span> {user.email} </span>
       <a onClick={handleLogOut} className="btn btn-sm">Sign out</a>
       </>:
-      <Link to="/Login" ><button onClick={handleLogOut} className="btn btn-sm">Login</button></Link>
+      <Link to="/Login" ><button onClick={handleLogOut} className="btn btn-sm">Login </button></Link>
     }
     
   </div>
